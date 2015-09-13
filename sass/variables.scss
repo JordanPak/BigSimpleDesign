@@ -1,0 +1,27 @@
+/*
+    BIG SIMPLE DESIGN
+    SCSS Variables
+
+    @author Jordan Pakrosnis
+*/
+
+// COLORS
+$primary:       rgba(44, 62, 80, 1);    // Dark Blue
+$primary-light: rgba(52, 152, 219, 1);  // Light Blue
+$primary-med:   rgba(41, 128, 185, 1);  // Mid Blue
+$accent:        rgba(231, 76, 60, 1);   // Orange
+$secondary:     rgba(236, 240, 241, 1); // Off-White
+
+$body-type:     #333333;                // Dark Gray
+
+
+// SPACING
+$space-default:         40px;
+$space-default-half:    20px;
+$space-default-mid:     30px;
+
+
+// FONTS
+$font-serif:        'Merriweather', serif;
+$font-sans-serif:   'Oswald', sans-serif;
+$font-heading:      'Oswald', sans-serif;

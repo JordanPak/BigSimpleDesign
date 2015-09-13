@@ -367,12 +367,30 @@ th {
 
 /*
     BIG SIMPLE DESIGN
+    SCSS Variables
+
+    @author Jordan Pakrosnis
+*/
+/*
+    BIG SIMPLE DESIGN
     Structure Styling
 
     @author Jordan Pakrosnis
 */
 body {
-  background: whitesmoke; }
+  background: #ecf0f1; }
+
+#pagewrap {
+  margin: 0 auto;
+  width: 960px; }
+
+header {
+  padding: 40px;
+  background: none;
+  border-bottom: 2px solid #2c3e50; }
+  header h1 {
+    margin: 0;
+    padding: 0; }
 
 /*
     BIG SIMPLE DESIGN
@@ -381,6 +399,10 @@ body {
     @author Jordan Pakrosnis
 */
 body {
-  font-family: Arial, sans-serif; }
+  font-family: "Merriweather", serif;
+  color: #333333; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif; }
 
 /*# sourceMappingURL=style.css.map */
