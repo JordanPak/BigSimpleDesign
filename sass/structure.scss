@@ -19,9 +19,56 @@ header {
     background: none;
     border-bottom: 2px solid $primary;
 
-    h1 {
-        margin: 0;
-        padding: 0;
+    #header-left {
+        display: block;
+        // float: left;
+    }
+
+    #header-right {
+        display: block;
+        float: right;
+    }
+
+    .site-title {
+
+        h1 {
+            display: block;
+            position: relative;
+            top: 3px;
+            margin: 0;
+            padding: 0;
+            color: $primary;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 2.12em;
+            letter-spacing: -1px;
+
+            b {
+                font-weight: 400;
+            }
+
+        } // h1
+
+        .site-description {
+            margin: 0;
+            padding: 0;
+        }
+
+    } // .site-title
+
+    #branding {
+        display: block;
+        float: left;
+        margin-right: $space-default-half;
+        padding: 15px;
+        font-weight: 400;
+        font-size: 2em;
+        font-family: $font-heading;
+        color: $secondary;
+        background: $accent;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
     }
 
 } // header
