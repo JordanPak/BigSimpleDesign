@@ -365,4 +365,22 @@ td,
 th {
   padding: 0; }
 
+/*
+    BIG SIMPLE DESIGN
+    Structure Styling
+
+    @author Jordan Pakrosnis
+*/
+body {
+  background: whitesmoke; }
+
+/*
+    BIG SIMPLE DESIGN
+    Structure Styling
+
+    @author Jordan Pakrosnis
+*/
+body {
+  font-family: Arial, sans-serif; }
+
 /*# sourceMappingURL=style.css.map */
