@@ -373,6 +373,12 @@ th {
 */
 /*
     BIG SIMPLE DESIGN
+    SCSS Mixins
+
+    @author Jordan Pakrosnis
+*/
+/*
+    BIG SIMPLE DESIGN
     Structure Styling
 
     @author Jordan Pakrosnis
@@ -442,7 +448,10 @@ footer {
     padding: 0; }
   footer a {
     color: #FFFFFF;
-    border-bottom: 2px solid #e74c3c; }
+    border-bottom: 2px solid #e74c3c;
+    -webkit-transition: all ease-in-out 200ms;
+    -moz-transition: all ease-in-out 200ms;
+    transition: all ease-in-out 200ms; }
     footer a:hover {
       border-color: #FFFFFF; }
 

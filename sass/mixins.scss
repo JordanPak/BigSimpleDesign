@@ -1,0 +1,12 @@
+/*
+    BIG SIMPLE DESIGN
+    SCSS Mixins
+
+    @author Jordan Pakrosnis
+*/
+
+@mixin transition-ease-in-out($speed: 200ms) {
+    -webkit-transition: all ease-in-out $speed;
+    -moz-transition: all ease-in-out $speed;
+    transition: all ease-in-out $speed;
+}
