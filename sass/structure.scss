@@ -5,6 +5,18 @@
     @author Jordan Pakrosnis
 */
 
+*::selection {
+    background: $accent;
+    color: $white;
+    text-shadow: none;    
+}
+
+*::-moz-selection {
+    background: $accent;
+    color: $white;
+    text-shadow: none;
+}
+
 body {
     background: $secondary;
 }
@@ -26,6 +38,7 @@ header {
     padding-bottom: $space-default + 10px;
     background: none;
     border-bottom: 4px solid $primary;
+    border-top: 2px solid $accent;
 
     #header-left {
         display: block;

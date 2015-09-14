@@ -383,6 +383,16 @@ th {
 
     @author Jordan Pakrosnis
 */
+*::selection {
+  background: #e74c3c;
+  color: #FFFFFF;
+  text-shadow: none; }
+
+*::-moz-selection {
+  background: #e74c3c;
+  color: #FFFFFF;
+  text-shadow: none; }
+
 body {
   background: #ecf0f1; }
 
@@ -400,7 +410,8 @@ header {
   padding: 40px;
   padding-bottom: 50px;
   background: none;
-  border-bottom: 4px solid #2c3e50; }
+  border-bottom: 4px solid #2c3e50;
+  border-top: 2px solid #e74c3c; }
   header #header-left {
     display: block; }
   header #header-right {
@@ -543,13 +554,18 @@ a {
   color: inherit;
   text-decoration: none; }
 
-p a {
+.entry p a, .entry li a, .entry li a {
   color: inherit;
   border-bottom: 1px solid #e74c3c;
   -webkit-transition: all ease-in-out 150ms;
   -moz-transition: all ease-in-out 150ms;
   transition: all ease-in-out 150ms; }
-  p a:hover {
+  .entry p a:hover, .entry li a:hover, .entry li a:hover {
     border-color: #333333; }
+
+.entry ul {
+  padding-left: 30px; }
+  .entry ul li {
+    margin-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */

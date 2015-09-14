@@ -22,7 +22,7 @@ a {
     text-decoration: none;
 }
 
-p a {
+.entry p a, .entry li a, .entry li a {
     color: inherit;
     border-bottom: 1px solid $accent;
 
@@ -33,3 +33,12 @@ p a {
     }
 
 } // p a
+
+.entry ul {
+    padding-left: $space-default-mid;
+
+    li {
+        margin-bottom: 5px;
+    }
+
+} // .entry ul
