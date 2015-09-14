@@ -10,3 +10,16 @@
     -moz-transition: all ease-in-out $speed;
     transition: all ease-in-out $speed;
 }
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+} // clearfix()
