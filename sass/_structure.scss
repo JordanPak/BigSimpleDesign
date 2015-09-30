@@ -8,7 +8,7 @@
 *::selection {
     background: $accent;
     color: $white;
-    text-shadow: none;    
+    text-shadow: none;
 }
 
 *::-moz-selection {
@@ -37,7 +37,6 @@ header {
     padding: $space-default;
     padding-bottom: $space-default + 10px;
     background: none;
-    border-bottom: 4px solid $primary;
     border-top: 2px solid $accent;
 
     #header-left {
