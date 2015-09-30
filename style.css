@@ -488,13 +488,18 @@ header {
 main {
   display: block;
   float: left;
-  width: 66%;
-  padding: 40px;
-  padding-right: 40px; }
+  width: 67%; }
   main.full-width {
     width: 100%;
-    padding: 40px;
     float: none; }
+  main .entry {
+    padding: 40px;
+    padding-bottom: 0; }
+    main .entry:last-child {
+      padding-bottom: 40px; }
+
+.featured-image {
+  width: 100%; }
 
 aside#sidebar-primary {
   display: block;

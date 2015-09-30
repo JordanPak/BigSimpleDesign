@@ -140,17 +140,32 @@ header {
 main {
     display: block;
     float: left;
-    width: 66%;
-    padding: $space-default;
-    padding-right: $space-default;
+    width: 67%;
+    // padding: $space-default;
+    // padding-right: $space-default;
 
     &.full-width {
         width: 100%;
-        padding: $space-default;
+        // padding: $space-default;
         float: none;
     }
 
+    .entry {
+        padding: $space-default;
+        padding-bottom: 0;
+
+        &:last-child {
+            padding-bottom: $space-default;
+        }
+
+    } // .entry
+
 } // main
+
+.featured-image {
+    width: 100%;
+}
+
 
 aside#sidebar-primary {
     display: block;
