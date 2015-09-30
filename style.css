@@ -567,6 +567,21 @@ a {
   .entry ul li {
     margin-bottom: 5px; }
 
+.button {
+  display: inline-block;
+  padding: 10px 18px 8px 18px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: #2c3e50;
+  color: #FFFFFF;
+  -webkit-transition: all ease-in-out 200ms;
+  -moz-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms; }
+  .button:hover {
+    background: #e74c3c; }
+
 /*
     BIG SIMPLE DESIGN
     Navigation Styling

@@ -42,3 +42,21 @@ a {
     }
 
 } // .entry ul
+
+.button {
+    display: inline-block;
+    padding: 10px 18px 8px 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: $primary;
+    color: $white;
+
+    @include transition-ease-in-out();
+
+    &:hover {
+        background: $accent;
+    }
+
+} // .button
