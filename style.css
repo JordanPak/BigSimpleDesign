@@ -456,18 +456,19 @@ header {
 
 .hero {
   margin: 0;
-  padding: 60px;
+  padding: 140px 60px;
   text-align: center;
   background-image: url("images/forest-lake.jpg");
   background-position: center top;
   background-size: cover;
   color: #FFFFFF;
-  border-bottom: 4px solid #2c3e50;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.75), 0 3px 8px rgba(0, 0, 0, 0.4); }
+  border-bottom: 2px solid #1b2b3c;
+  border-top: 2px solid #1b2b3c;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.8), 0 3px 8px rgba(0, 0, 0, 0.65), 0 0 2px rgba(0, 0, 0, 0.6); }
   .hero h2 {
     display: block;
-    font-size: 2.375em;
-    margin: 0 0 10px 0;
+    font-size: 48px;
+    margin: 0 0 20px 0;
     padding: 0;
     line-height: normal; }
   .hero p {
@@ -475,7 +476,7 @@ header {
     margin: 0 0 10px 0;
     padding: 0;
     line-height: normal;
-    font-size: 1.125em; }
+    font-size: 22px; }
 
 .content-sidebar-wrap {
   display: block; }
