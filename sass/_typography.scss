@@ -70,3 +70,15 @@ a {
     }
 
 } // .button
+
+.button-outline {
+    background: none;
+    border: 2px solid $white;
+    text-shadow: none;
+
+    &:hover {
+        background: $white;
+        color: $primary-dark;
+    }
+
+} // .button-outline
