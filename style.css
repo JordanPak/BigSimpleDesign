@@ -491,6 +491,10 @@ main {
   width: 66%;
   padding: 40px;
   padding-right: 40px; }
+  main.full-width {
+    width: 100%;
+    padding: 40px;
+    float: none; }
 
 aside#sidebar-primary {
   display: block;
@@ -532,6 +536,24 @@ hr {
   padding: 0;
   border: none;
   border-top: 1px solid rgba(0, 0, 0, 0.18); }
+
+.row {
+  display: block; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+
+.one-third, .two-thirds, .one-half {
+  display: block;
+  float: left;
+  margin-left: 5%; }
+  .one-third.first, .two-thirds.first, .one-half.first {
+    margin-left: 0; }
+
+.one-third {
+  width: 30%; }
 
 /*
     BIG SIMPLE DESIGN

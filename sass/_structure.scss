@@ -143,7 +143,14 @@ main {
     width: 66%;
     padding: $space-default;
     padding-right: $space-default;
-}
+
+    &.full-width {
+        width: 100%;
+        padding: $space-default;
+        float: none;
+    }
+
+} // main
 
 aside#sidebar-primary {
     display: block;
@@ -199,4 +206,24 @@ hr {
     padding: 0;
     border: none;
     border-top: 1px solid rgba(0,0,0,0.18);
+}
+
+.row {
+    display: block;
+    @include clearfix();
+}
+
+.one-third, .two-thirds, .one-half {
+    display: block;
+    float: left;
+    margin-left: 5%;
+
+    &.first {
+        margin-left: 0;
+    }
+
+} // Column Width Classes
+
+.one-third {
+    width: 30%;
 }
