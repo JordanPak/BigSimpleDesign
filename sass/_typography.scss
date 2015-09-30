@@ -32,6 +32,10 @@ a {
     text-decoration: none;
 }
 
+.centered {
+    text-align: center;
+}
+
 .entry p a, .entry li a, .entry li a {
     color: inherit;
     border-bottom: 1px solid $accent;
@@ -68,6 +72,19 @@ a {
     &:hover {
         background: $accent;
     }
+
+    &.button-lg {
+        font-size: 14px;
+        padding: 10px 20px 8px 20px;
+        background: $accent;
+        border: 2px solid $accent;
+
+        &:hover {
+            background: $white;
+            color: $accent;  
+        }
+
+    } // .button-lg
 
 } // .button
 

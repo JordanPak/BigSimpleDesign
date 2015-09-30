@@ -567,6 +567,9 @@ hr {
 .one-third {
   width: 30%; }
 
+.one-half {
+  width: 47.5%; }
+
 /*
     BIG SIMPLE DESIGN
     Structure Styling
@@ -594,6 +597,9 @@ h1 {
 a {
   color: inherit;
   text-decoration: none; }
+
+.centered {
+  text-align: center; }
 
 .entry p a, .entry li a, .entry li a {
   color: inherit;
@@ -623,6 +629,14 @@ a {
   transition: all ease-in-out 200ms; }
   .button:hover {
     background: #e74c3c; }
+  .button.button-lg {
+    font-size: 14px;
+    padding: 10px 20px 8px 20px;
+    background: #e74c3c;
+    border: 2px solid #e74c3c; }
+    .button.button-lg:hover {
+      background: #FFFFFF;
+      color: #e74c3c; }
 
 .button-outline {
   background: none;
