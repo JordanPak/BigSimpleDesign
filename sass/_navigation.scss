@@ -1,0 +1,53 @@
+/*
+    BIG SIMPLE DESIGN
+    Navigation Styling
+
+    @author Jordan Pakrosnis
+*/
+
+nav#main {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background: $primary;
+    color: $white;
+
+    ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        padding-left: $space-default - 14px;
+        list-style-type: none;
+        // text-align: right;
+
+        li {
+            list-style-type: none;
+            display: inline;
+
+            a {
+                display: inline-block;
+                padding: 13px 20px 13px 20px;
+                font-size: 14px;
+                font-family: $font-heading;
+                letter-spacing: 1px;
+                // font-weight: 700;
+                text-transform: uppercase;
+
+                @include transition-ease-in-out(150ms);
+
+                &:hover {
+                    background-color: $accent;
+                }
+
+                i {
+                    position: relative;
+                    top: -1px;
+                }
+
+            } // a
+
+        } // li
+
+    } // ul
+
+} // nav#main

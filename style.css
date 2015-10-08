@@ -402,6 +402,7 @@ div, header, footer, main, article, aside, p, h1, h2, h3, h4, h5, h6 {
 
 #pagewrap {
   margin: 0 auto;
+  margin-bottom: 40px;
   width: 960px;
   background: #FFFFFF;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.22); }
@@ -410,7 +411,6 @@ header {
   padding: 40px;
   padding-bottom: 50px;
   background: none;
-  border-bottom: 4px solid #2c3e50;
   border-top: 2px solid #e74c3c; }
   header #header-left {
     display: block; }
@@ -436,7 +436,7 @@ header {
     padding: 0;
     color: #e74c3c;
     text-transform: uppercase;
-    font-size: .85em;
+    font-size: 15px;
     font-weight: 700;
     line-height: normal; }
   header #branding {
@@ -457,18 +457,19 @@ header {
 
 .hero {
   margin: 0;
-  padding: 60px;
+  padding: 140px 60px;
   text-align: center;
   background-image: url("images/forest-lake.jpg");
   background-position: center top;
   background-size: cover;
   color: #FFFFFF;
-  border-bottom: 4px solid #2c3e50;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.75), 0 3px 8px rgba(0, 0, 0, 0.4); }
+  border-bottom: 2px solid #1b2b3c;
+  border-top: 2px solid #1b2b3c;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.8), 0 3px 8px rgba(0, 0, 0, 0.65), 0 0 2px rgba(0, 0, 0, 0.6); }
   .hero h2 {
     display: block;
-    font-size: 2.375em;
-    margin: 0 0 10px 0;
+    font-size: 48px;
+    margin: 0 0 20px 0;
     padding: 0;
     line-height: normal; }
   .hero p {
@@ -476,7 +477,12 @@ header {
     margin: 0 0 10px 0;
     padding: 0;
     line-height: normal;
-    font-size: 1.125em; }
+    font-size: 22px; }
+  .hero .button {
+    margin-top: 60px;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 12px 22px 10px 22px; }
 
 .content-sidebar-wrap {
   display: block; }
@@ -489,9 +495,31 @@ header {
 main {
   display: block;
   float: left;
-  width: 66%;
-  padding: 40px;
-  padding-right: 40px; }
+  width: 67%; }
+  main.full-width {
+    width: 100%;
+    float: none; }
+  main .entry {
+    padding: 40px;
+    padding-bottom: 0; }
+    main .entry:last-child {
+      padding-bottom: 40px; }
+
+.featured-image {
+  width: 100%;
+  height: 240px;
+  background: #ecf0f1;
+  background-clip: border-box;
+  background-size: cover;
+  background-position: center;
+  border-top: 2px solid #1b2b3c; }
+
+#featured-image-about {
+  background-image: url("images/home-office.jpg"); }
+
+#featured-image-services {
+  background-image: url("images/paper-drawing.jpg");
+  background-position: bottom; }
 
 aside#sidebar-primary {
   display: block;
@@ -534,6 +562,27 @@ hr {
   border: none;
   border-top: 1px solid rgba(0, 0, 0, 0.18); }
 
+.row {
+  display: block; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+
+.one-third, .two-thirds, .one-half {
+  display: block;
+  float: left;
+  margin-left: 5%; }
+  .one-third.first, .two-thirds.first, .one-half.first {
+    margin-left: 0; }
+
+.one-third {
+  width: 30%; }
+
+.one-half {
+  width: 47.5%; }
+
 /*
     BIG SIMPLE DESIGN
     Structure Styling
@@ -546,13 +595,24 @@ body {
   font-size: 16px;
   line-height: 24px; }
 
+p {
+  margin: 1em 0; }
+
 h1, h2, h3, h4, h5, h6 {
+  display: block;
   font-family: "Oswald", sans-serif;
   font-weight: 400; }
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 20px; }
 
 a {
   color: inherit;
   text-decoration: none; }
+
+.centered {
+  text-align: center; }
 
 .entry p a, .entry li a, .entry li a {
   color: inherit;
@@ -567,5 +627,73 @@ a {
   padding-left: 30px; }
   .entry ul li {
     margin-bottom: 5px; }
+
+.button {
+  display: inline-block;
+  padding: 10px 18px 8px 18px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: #2c3e50;
+  color: #FFFFFF;
+  -webkit-transition: all ease-in-out 200ms;
+  -moz-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms; }
+  .button:hover {
+    background: #e74c3c; }
+  .button.button-lg {
+    font-size: 14px;
+    padding: 10px 20px 8px 20px;
+    background: #e74c3c;
+    border: 2px solid #e74c3c; }
+    .button.button-lg:hover {
+      background: #FFFFFF;
+      color: #e74c3c; }
+
+.button-outline {
+  background: none;
+  border: 2px solid #FFFFFF;
+  text-shadow: none; }
+  .button-outline:hover {
+    background: #FFFFFF;
+    color: #1b2b3c; }
+
+/*
+    BIG SIMPLE DESIGN
+    Navigation Styling
+
+    @author Jordan Pakrosnis
+*/
+nav#main {
+  display: block;
+  margin: 0;
+  padding: 0;
+  background: #2c3e50;
+  color: #FFFFFF; }
+  nav#main ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-left: 26px;
+    list-style-type: none; }
+    nav#main ul li {
+      list-style-type: none;
+      display: inline; }
+      nav#main ul li a {
+        display: inline-block;
+        padding: 13px 20px 13px 20px;
+        font-size: 14px;
+        font-family: "Oswald", sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        -webkit-transition: all ease-in-out 150ms;
+        -moz-transition: all ease-in-out 150ms;
+        transition: all ease-in-out 150ms; }
+        nav#main ul li a:hover {
+          background-color: #e74c3c; }
+        nav#main ul li a i {
+          position: relative;
+          top: -1px; }
 
 /*# sourceMappingURL=style.css.map */
