@@ -46,6 +46,10 @@ a {
         border-color: $body-type;
     }
 
+    &:visited {
+        border-color: $green;
+    }
+
 } // p a
 
 .entry ul {
@@ -79,12 +83,21 @@ a {
         background: $accent;
         border: 2px solid $accent;
 
+        &:visited {
+            background: $green;
+            border-color: $green;
+        }
+
         &:hover {
             background: $white;
-            color: $accent;  
+            color: $accent;
         }
 
     } // .button-lg
+
+    &:visited {
+        background: $green;
+    }
 
 } // .button
 

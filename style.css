@@ -622,6 +622,8 @@ a {
   transition: all ease-in-out 150ms; }
   .entry p a:hover, .entry li a:hover, .entry li a:hover {
     border-color: #333333; }
+  .entry p a:visited, .entry li a:visited, .entry li a:visited {
+    border-color: #109400; }
 
 .entry ul {
   padding-left: 30px; }
@@ -647,9 +649,14 @@ a {
     padding: 10px 20px 8px 20px;
     background: #e74c3c;
     border: 2px solid #e74c3c; }
+    .button.button-lg:visited {
+      background: #109400;
+      border-color: #109400; }
     .button.button-lg:hover {
       background: #FFFFFF;
       color: #e74c3c; }
+  .button:visited {
+    background: #109400; }
 
 .button-outline {
   background: none;
