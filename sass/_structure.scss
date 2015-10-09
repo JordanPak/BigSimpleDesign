@@ -190,6 +190,12 @@ main {
     background-position: bottom;
 }
 
+#featured-image-contact {
+    background-image: url('images/stationery.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
 aside#sidebar-primary {
     display: block;
     float: right;

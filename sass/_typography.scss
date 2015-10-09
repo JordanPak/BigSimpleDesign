@@ -46,10 +46,15 @@ a {
         border-color: $body-type;
     }
 
+    &:visited {
+        border-color: $green;
+    }
+
 } // p a
 
 .entry ul {
     padding-left: $space-default-mid;
+    list-style-type: square;
 
     li {
         margin-bottom: 5px;
@@ -79,12 +84,21 @@ a {
         background: $accent;
         border: 2px solid $accent;
 
+        &:visited {
+            background: $green;
+            border-color: $green;
+        }
+
         &:hover {
             background: $white;
-            color: $accent;  
+            color: $accent;
         }
 
     } // .button-lg
+
+    &:visited {
+        background: $green;
+    }
 
 } // .button
 
