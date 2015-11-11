@@ -715,5 +715,26 @@ nav#main {
 
     @author Jordan Pakrosnis
 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px; }
+  table td, table th {
+    padding: 11px;
+    text-align: left;
+    cursor: default; }
+  table th {
+    padding-bottom: 8px;
+    font-size: 14px; }
+  table tr {
+    border-bottom: 1px solid #EFEFEF;
+    -webkit-transition: all ease-in-out 100ms;
+    -moz-transition: all ease-in-out 100ms;
+    transition: all ease-in-out 100ms; }
+    table tr:hover {
+      color: #000000;
+      border-bottom-color: #e74c3c; }
+  table thead {
+    border-bottom: 2px solid #2c3e50; }
 
 /*# sourceMappingURL=style.css.map */

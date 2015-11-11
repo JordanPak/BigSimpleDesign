@@ -4,3 +4,37 @@
 
     @author Jordan Pakrosnis
 */
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 14px;
+
+	td, th {
+		padding: 11px;
+		text-align: left;
+		cursor: default;
+	}
+
+	th {
+		padding-bottom: 8px;
+		font-size: 14px;
+	}
+
+	tr {
+		border-bottom: 1px solid $gray-light;
+
+		@include transition-ease-in-out( 100ms );
+
+		&:hover {
+			color: $black;
+			border-bottom-color: $accent;
+		}
+
+	} // tr
+
+	thead {
+		border-bottom: 2px solid $primary;
+	} // thead
+
+} // table
