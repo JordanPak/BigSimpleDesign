@@ -737,4 +737,46 @@ table {
   table thead {
     border-bottom: 2px solid #2c3e50; }
 
+/*
+    BIG SIMPLE DESIGN
+    Form Styling
+
+    @author Jordan Pakrosnis
+*/
+form {
+  font-size: 14px; }
+  form div {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  form label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: 700;
+    font-size: 16px; }
+  form input, form textarea, form select {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    outline: none;
+    border: 1px solid #C7C7C7;
+    -webkit-transition: all ease-in-out 200ms;
+    -moz-transition: all ease-in-out 200ms;
+    transition: all ease-in-out 200ms; }
+    form input:focus, form input:active, form textarea:focus, form textarea:active, form select:focus, form select:active {
+      background: #e74c3c;
+      border-color: #e74c3c;
+      box-shadow: none;
+      color: #FFFFFF; }
+    form input[type="checkbox"], form input[type="radio"], form textarea[type="checkbox"], form textarea[type="radio"], form select[type="checkbox"], form select[type="radio"] {
+      position: relative;
+      top: 1px;
+      margin-right: 4px;
+      margin-bottom: 11px;
+      width: 25px; }
+  form textarea {
+    max-width: 500px; }
+  form button {
+    border: none; }
+
 /*# sourceMappingURL=style.css.map */
