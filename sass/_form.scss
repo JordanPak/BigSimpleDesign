@@ -1,0 +1,58 @@
+/*
+    BIG SIMPLE DESIGN
+    Form Styling
+
+    @author Jordan Pakrosnis
+*/
+
+form {
+	font-size: 14px;
+
+	div {
+		display: block;
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 3px;
+		font-weight: 700;
+		font-size: 16px;
+	}
+
+	input, textarea, select {
+		padding: 10px;
+		width: 100%;
+		max-width: 300px;
+		outline: none;
+		border: 1px solid $gray;
+
+		@include transition-ease-in-out();
+
+		&:focus, &:active {
+			background: $accent;
+			border-color: $accent;
+			box-shadow: none;
+			color: $white;
+		}
+
+		&[type="checkbox"], &[type="radio"] {
+			position: relative;
+			top: 1px;
+			margin-right: 4px;
+			margin-bottom: 11px;
+			width: 25px;
+		}
+
+	} // input, textarea
+
+	textarea {
+		max-width: 500px;
+	}
+
+	button {
+		border: none;
+	}
+
+} // form
