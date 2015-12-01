@@ -406,6 +406,9 @@ div, header, footer, main, article, aside, p, h1, h2, h3, h4, h5, h6 {
   width: 960px;
   background: #FFFFFF;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.22); }
+  @media print {
+    #pagewrap {
+      width: 1000px; } }
 
 header {
   padding: 40px;
@@ -465,7 +468,8 @@ header {
     line-height: normal; }
     @media print {
       header #branding {
-        background-color: #000000; } }
+        background-color: #000000 !important;
+        color: #FFFFFF !important; } }
 
 .hero {
   margin: 0;
@@ -478,6 +482,11 @@ header {
   border-bottom: 2px solid #1b2b3c;
   border-top: 2px solid #1b2b3c;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.8), 0 3px 8px rgba(0, 0, 0, 0.65), 0 0 2px rgba(0, 0, 0, 0.6); }
+  @media print {
+    .hero {
+      background-image: none;
+      color: #000000;
+      text-shadow: none; } }
   .hero h2 {
     display: block;
     font-size: 48px;
@@ -574,6 +583,9 @@ footer {
     transition: all ease-in-out 200ms; }
     footer a:hover {
       border-color: #FFFFFF; }
+    @media print {
+      footer a {
+        color: #000000; } }
 
 hr {
   display: block;
@@ -840,5 +852,22 @@ form {
     -o-transform: rotate(10deg) scale(1.25, 1.25);
     -ms-transform: rotate(10deg) scale(1.25, 1.25);
     transform: rotate(10deg) scale(1.25, 1.25); }
+
+/*
+    BIG SIMPLE DESIGN
+    Global Print Styles
+
+    @author Jordan Pakrosnis
+*/
+@media print {
+  * {
+    color: #000000 !important;
+    background-color: transparent !important;
+    background: transparent !important;
+    border-color: #000000 !important;
+    border-left-color: #000000 !important;
+    border-right-color: #000000 !important;
+    border-top-color: #000000 !important;
+    border-bottom-color: #000000 !important; } }
 
 /*# sourceMappingURL=style.css.map */
