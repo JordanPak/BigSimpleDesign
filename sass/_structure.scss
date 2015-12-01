@@ -40,6 +40,10 @@ header {
     background: none;
     border-top: 2px solid $accent;
 
+	@media print {
+		border-top: none;
+	}
+
     #header-left {
         display: block;
         // float: left;
@@ -69,6 +73,10 @@ header {
                 font-weight: 400;
             }
 
+			@media print {
+				color: $black;
+			}
+
         } // h1
 
         .site-description {
@@ -79,7 +87,12 @@ header {
             font-size: 15px;
             font-weight: 700;
             line-height: normal;
-        }
+
+			@media print {
+				color: $black
+			}
+
+        } // .site-description
 
     } // .site-title
 
@@ -98,7 +111,12 @@ header {
         color: $white;
         background: $accent;
         line-height: normal;
-    }
+
+		@media print {
+			background-color: $black;
+		}
+
+    } // #branding
 
 } // header
 
@@ -179,7 +197,12 @@ main {
     background-size: cover;
     background-position: center;
     border-top: 2px solid $primary-dark;
-}
+
+	@media print {
+		display: none;
+	}
+
+} // .featured-image
 
 #featured-image-about {
     background-image: url('images/home-office.jpg');

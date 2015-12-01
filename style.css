@@ -412,6 +412,9 @@ header {
   padding-bottom: 50px;
   background: none;
   border-top: 2px solid #e74c3c; }
+  @media print {
+    header {
+      border-top: none; } }
   header #header-left {
     display: block; }
   header #header-right {
@@ -431,6 +434,9 @@ header {
     line-height: normal; }
     header .site-title h1 b {
       font-weight: 400; }
+    @media print {
+      header .site-title h1 {
+        color: #000000; } }
   header .site-title .site-description {
     margin: 0;
     padding: 0;
@@ -439,6 +445,9 @@ header {
     font-size: 15px;
     font-weight: 700;
     line-height: normal; }
+    @media print {
+      header .site-title .site-description {
+        color: #000000; } }
   header #branding {
     display: block;
     float: left;
@@ -454,6 +463,9 @@ header {
     color: #FFFFFF;
     background: #e74c3c;
     line-height: normal; }
+    @media print {
+      header #branding {
+        background-color: #000000; } }
 
 .hero {
   margin: 0;
@@ -513,6 +525,9 @@ main {
   background-size: cover;
   background-position: center;
   border-top: 2px solid #1b2b3c; }
+  @media print {
+    .featured-image {
+      display: none; } }
 
 #featured-image-about {
   background-image: url("images/home-office.jpg"); }
@@ -685,6 +700,9 @@ nav#main {
   padding: 0;
   background: #2c3e50;
   color: #FFFFFF; }
+  @media print {
+    nav#main {
+      display: none; } }
   nav#main ul {
     display: block;
     margin: 0;
