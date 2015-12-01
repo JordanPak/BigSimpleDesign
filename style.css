@@ -406,12 +406,18 @@ div, header, footer, main, article, aside, p, h1, h2, h3, h4, h5, h6 {
   width: 960px;
   background: #FFFFFF;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.22); }
+  @media print {
+    #pagewrap {
+      width: 1000px; } }
 
 header {
   padding: 40px;
   padding-bottom: 50px;
   background: none;
   border-top: 2px solid #e74c3c; }
+  @media print {
+    header {
+      border-top: none; } }
   header #header-left {
     display: block; }
   header #header-right {
@@ -431,6 +437,9 @@ header {
     line-height: normal; }
     header .site-title h1 b {
       font-weight: 400; }
+    @media print {
+      header .site-title h1 {
+        color: #000000; } }
   header .site-title .site-description {
     margin: 0;
     padding: 0;
@@ -439,6 +448,9 @@ header {
     font-size: 15px;
     font-weight: 700;
     line-height: normal; }
+    @media print {
+      header .site-title .site-description {
+        color: #000000; } }
   header #branding {
     display: block;
     float: left;
@@ -454,6 +466,10 @@ header {
     color: #FFFFFF;
     background: #e74c3c;
     line-height: normal; }
+    @media print {
+      header #branding {
+        background-color: #000000 !important;
+        color: #FFFFFF !important; } }
 
 .hero {
   margin: 0;
@@ -466,6 +482,11 @@ header {
   border-bottom: 2px solid #1b2b3c;
   border-top: 2px solid #1b2b3c;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.8), 0 3px 8px rgba(0, 0, 0, 0.65), 0 0 2px rgba(0, 0, 0, 0.6); }
+  @media print {
+    .hero {
+      background-image: none;
+      color: #000000;
+      text-shadow: none; } }
   .hero h2 {
     display: block;
     font-size: 48px;
@@ -513,6 +534,9 @@ main {
   background-size: cover;
   background-position: center;
   border-top: 2px solid #1b2b3c; }
+  @media print {
+    .featured-image {
+      display: none; } }
 
 #featured-image-about {
   background-image: url("images/home-office.jpg"); }
@@ -559,6 +583,9 @@ footer {
     transition: all ease-in-out 200ms; }
     footer a:hover {
       border-color: #FFFFFF; }
+    @media print {
+      footer a {
+        color: #000000; } }
 
 hr {
   display: block;
@@ -685,6 +712,9 @@ nav#main {
   padding: 0;
   background: #2c3e50;
   color: #FFFFFF; }
+  @media print {
+    nav#main {
+      display: none; } }
   nav#main ul {
     display: block;
     margin: 0;
@@ -779,5 +809,65 @@ form {
     max-width: 500px; }
   form button {
     border: none; }
+
+/*
+    BIG SIMPLE DESIGN
+    Stuff on Sample Page
+
+    @author Jordan Pakrosnis
+*/
+#halo-graphic {
+  border: 2px solid #d4d4d4; }
+
+#css-animation {
+  display: block;
+  margin: 30px auto 0 auto;
+  padding: 30px;
+  width: 160px;
+  height: auto;
+  background-color: #e74c3c;
+  background: -webkit-linear-gradient(#e74c3c, #a82315);
+  background: -o-linear-gradient(#e74c3c, #a82315);
+  background: -moz-linear-gradient(#e74c3c, #a82315);
+  background: linear-gradient(#e74c3c, #a82315);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 28px;
+  font-family: "Oswald", sans-serif;
+  line-height: 32px;
+  cursor: default;
+  border: 4px solid #d4d4d4;
+  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 400ms ease-in-out;
+  -moz-transition: 400ms ease-in-out;
+  -o-transition: 400ms ease-in-out;
+  transition: 400ms ease-in-out; }
+  #css-animation:hover {
+    border-color: #FFFFFF;
+    -moz-box-shadow: 5px 8px 8px rgba(231, 76, 60, 0.5);
+    box-shadow: 5px 8px 8px rgba(231, 76, 60, 0.5);
+    -webkit-transform: rotate(10deg) scale(1.25, 1.25);
+    -moz-transform: rotate(10deg) scale(1.25, 1.25);
+    -o-transform: rotate(10deg) scale(1.25, 1.25);
+    -ms-transform: rotate(10deg) scale(1.25, 1.25);
+    transform: rotate(10deg) scale(1.25, 1.25); }
+
+/*
+    BIG SIMPLE DESIGN
+    Global Print Styles
+
+    @author Jordan Pakrosnis
+*/
+@media print {
+  * {
+    color: #000000 !important;
+    background-color: transparent !important;
+    background: transparent !important;
+    border-color: #000000 !important;
+    border-left-color: #000000 !important;
+    border-right-color: #000000 !important;
+    border-top-color: #000000 !important;
+    border-bottom-color: #000000 !important; } }
 
 /*# sourceMappingURL=style.css.map */
